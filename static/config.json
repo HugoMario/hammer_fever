@@ -1,7 +1,7 @@
 {
     "windowTitle": "Kiwi IRC - The web IRC client",
     "startupScreen": "welcome",
-    "kiwiServer": "https://localdev.clients.kiwiirc.com/webirc/kiwiirc/",
+    "kiwiServer": "http://172.105.148.13:8080/webirc/kiwiirc",
     "restricted": false,
     "theme": "Default",
     "themes": [
@@ -16,8 +16,10 @@
         { "name": "Elite", "url": "static/themes/elite" }
     ],
     "startupOptions" : {
-        "channel": "#kiwiirc-default",
-        "nick": "kiwi-n?"
+        "server": "chat.freenode.com",
+        "port": 6667,
+        "channel": "#test_ctg_2020",
+        "nick": "kiwi0001"
     },
     "embedly": {
         "key": ""

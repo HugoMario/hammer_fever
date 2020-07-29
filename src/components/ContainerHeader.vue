@@ -5,7 +5,7 @@
     >
 
         <template v-if="isChannel()">
-            <div class="kiwi-header-name-container">
+            <div class="kiwi-header-name-container">o.O
                 <div class="kiwi-header-name">{{ buffer.name }}</div>
             </div>
             <div
@@ -310,6 +310,10 @@ export default {
     text-align: left;
     overflow-x: hidden;
     white-space: nowrap;
+}
+
+.msn-explorer {
+    background-image: url("msn-explorer.png");
 }
 
 .kiwi-header-name {
