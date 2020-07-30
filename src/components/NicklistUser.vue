@@ -35,7 +35,8 @@
             />
         </div>
         <span class="kiwi-nicklist-user-prefix">
-            {{ props.nicklist.userModePrefix(props.user) }}
+            <img class="kiwi-nick-user-hammer-prefix"
+                 :src="props.nicklist.userModeHammerPrefix(props.user)">
         </span><span
             :style="{ 'color': props.m().userColour() }"
             class="kiwi-nicklist-user-nick"
@@ -168,6 +169,12 @@ export default {
     top: 0;
     right: 0;
     margin: 0;
+}
+
+.kiwi-nick-user-hammer-prefix {
+    width: 15px;
+    height: auto;
+    background: white;
 }
 
 .kiwi-avatar-container-user-prefix {

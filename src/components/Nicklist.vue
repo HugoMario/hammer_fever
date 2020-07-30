@@ -205,6 +205,9 @@ export default {
         userModePrefix(user) {
             return this.buffer.userModePrefix(user);
         },
+        userModeHammerPrefix(user) {
+            return this.buffer.userModeHammerPrefix(user);
+        },
         userMode(user) {
             return this.buffer.userMode(user);
         },

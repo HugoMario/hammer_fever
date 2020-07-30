@@ -137,6 +137,10 @@ const methods = {
         let props = this.props;
         return props.ml.buffer.userModePrefix(user);
     },
+    userModeHammerPrefix(user) {
+        let props = this.props;
+        return props.ml.buffer.userModeHammerPrefix(user);
+    },
 };
 
 export default {

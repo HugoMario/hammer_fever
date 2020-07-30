@@ -8,7 +8,6 @@
                 <away-status-indicator :network="network" :user="user" /> {{ user.nick }}
                 <span v-if="userMode" class="kiwi-userbox-modestring">+{{ userMode }}</span>
             </h3>
-            <div class="kiwi-userbox-usermask">{{ user.username }}@{{ user.host }}</div>
         </div>
 
         <div class="kiwi-userbox-basicinfo">

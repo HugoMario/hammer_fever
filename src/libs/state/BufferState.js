@@ -229,6 +229,25 @@ export default class BufferState {
     }
 
     /**
+     * Get a users prefix symbol on a buffer from its modes
+     * @param {Object} user The user object
+     */
+    userModeHammerPrefix(user) {
+        let hammerPrefix = '';
+        let prefix = this.userModePrefix(user);
+
+        if (prefix === '@') {
+            hammerPrefix = 'static/hammers/hammer_yellow_white_bg.png';
+        } else if (prefix === '+') {
+            hammerPrefix = 'static/hammers/hammer_brown_white_bg.png';
+        }
+
+        console.log(hammerPrefix);
+
+        return hammerPrefix;
+    }
+
+    /**
      * Get a users mode on a buffer
      * @param user {Object} The user object
      */
