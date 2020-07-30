@@ -70,11 +70,9 @@
                     @mouseover="props.ml.hover_nick=props.message.nick.toLowerCase();"
                     @mouseout="props.ml.hover_nick='';"
                 >
-                    <span class="kiwi-messagelist-nick-prefix">{{
-                        props.message.user ?
-                            props.m().userModePrefix(props.message.user) :
-                            ''
-                    }}</span>{{ props.message.nick }}
+                    <img class="kiwi-messagelist-nick-hammer-prefix"
+                         :src="props.m().userModeHammerPrefix(props.message.user)"
+                    />{{ props.message.nick }}
                 </a>
                 <div
                     v-if="props.m().showRealName()"
@@ -382,6 +380,12 @@ export default {
 
 .kiwi-messagelist-message-error .kiwi-messagelist-body {
     margin-bottom: 0;
+}
+
+.kiwi-messagelist-nick-hammer-prefix {
+    width: 15px;
+    height: auto;
+    background: white;
 }
 
 @media screen and (max-width: 769px) {
