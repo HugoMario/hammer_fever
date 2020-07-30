@@ -241,9 +241,6 @@ export default class BufferState {
         } else if (prefix === '+') {
             hammerPrefix = 'static/hammers/hammer_brown_white_bg.png';
         }
-
-        console.log(hammerPrefix);
-
         return hammerPrefix;
     }
 

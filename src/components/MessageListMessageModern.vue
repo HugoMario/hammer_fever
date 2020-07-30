@@ -213,7 +213,6 @@ const methods = {
         return props.ml.buffer.userMode(user);
     },
     userModePrefix(user) {
-        console.log('aja... q es la m o.O');
         let props = this.props;
         return props.ml.buffer.userModePrefix(user);
     },
