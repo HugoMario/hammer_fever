@@ -5,8 +5,10 @@
     >
 
         <template v-if="isChannel()">
-            <div class="kiwi-header-name-container">o.O
-                <div class="kiwi-header-name">{{ buffer.name }}</div>
+            <div class="kiwi-header-name-container">
+                <div class="kiwi-header-name">
+                    <img class="msn-explorer" src="static/msn-explorer.png">
+                    {{ buffer.name }}</div>
             </div>
             <div
                 v-if="isJoined && isConnected"
@@ -144,7 +146,8 @@
 
         <template v-else-if="isSpecial()">
             <div class="kiwi-header-name-container">
-                <div class="kiwi-header-name">{{ buffer.name }}</div>
+                <div class="kiwi-header-name">
+                    {{ buffer.name }}</div>
             </div>
             <div class="kiwi-header-options">
                 <div class="kiwi-header-option kiwi-header-option-leave">
@@ -313,7 +316,9 @@ export default {
 }
 
 .msn-explorer {
-    background-image: url("msn-explorer.png");
+    display: inline;
+    width: 20px;
+    height: auto;
 }
 
 .kiwi-header-name {
